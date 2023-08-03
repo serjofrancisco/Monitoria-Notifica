@@ -1,6 +1,6 @@
 <h1 align="center">Monitorador de sites</h1>
 
-<h3 align="center">Desenvolvie um monitorador de sites, verificar se está no ar e se foi modificado</h3>
+<h3 align="center">Desenvolvi um monitorador de sites, para verificar se está no ar e/ou se foi modificado</h3>
 
 ## 💻 Sobre o projeto
 
