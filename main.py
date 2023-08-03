@@ -9,14 +9,16 @@ load_dotenv()
 
 
 def get_data():
-    print(os.environ['email'])
     try:
-        request = requests.get('https://coreseflores.studio/')
+        request = requests.get('https://coesflores.studio/')
         content = bs(request.text,"html.parser")
+        # change_default(content.prettify())
         compare = test_data(content.prettify())
-        print(compare)
-    except:
-        print("Fora do ar")
+        if compare == False:
+            enviar_email("Site Modificado")
+    except Exception as e:
+        enviar_email("Site fora do ar")
+        print()
 
 
 
@@ -30,9 +32,10 @@ def change_default(text):
     with open('content.txt', 'w') as f:
             f.write(text)
 # codigo abaixo é de autoria do hashtagTreinamentos
-def enviar_email():  
-    corpo_email = """
+def enviar_email(text):  
+    corpo_email = f"""
     <p>Tem Algum problema no site, verifique</p>
+    <p>Erro: {text}</p>
     """
 
     msg = email.message.Message()
