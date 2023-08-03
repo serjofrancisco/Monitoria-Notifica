@@ -18,8 +18,6 @@ def get_data():
             enviar_email("Site Modificado")
     except Exception as e:
         enviar_email("Site fora do ar")
-        print()
-
 
 
 def test_data(text):
@@ -31,6 +29,7 @@ def test_data(text):
 def change_default(text):
     with open('content.txt', 'w') as f:
             f.write(text)
+
 # codigo abaixo é de autoria do hashtagTreinamentos
 def enviar_email(text):  
     corpo_email = f"""

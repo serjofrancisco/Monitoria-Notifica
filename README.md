@@ -34,7 +34,10 @@ $ pip3 install -r requirements.txt
 # Modifique as váriaveis de ambiente com o .env.example
 $ Renomeie o arquivo .env.example para .env e modifique as variáveis de ambiente
 
-# Execute a aplicação em modo de desenvolvimento
+# Execute a aplicação em modo de desenvolvimento para pegar o html esperado
+$ python3 getContent.py
+
+# Execute a aplicação em modo de desenvolvimento para verificar e notificar
 $ python3 main.py
 
 ```
