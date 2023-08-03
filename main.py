@@ -10,7 +10,7 @@ load_dotenv()
 
 def get_data():
     try:
-        request = requests.get('https://coesflores.studio/')
+        request = requests.get(os.environ['url'])
         content = bs(request.text,"html.parser")
         # change_default(content.prettify())
         compare = test_data(content.prettify())
@@ -51,10 +51,6 @@ def enviar_email(text):
     # Login Credentials for sending the mail
     s.login(msg['From'], password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
-    print('Email enviado')
-
-
-
 
 
 get_data()
