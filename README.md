@@ -4,7 +4,7 @@
 
 ## 💻 Sobre o projeto
 
-Um monitorador de sites que verifica um URL passada e compara com o html esperado, caso não consiga acessar ou o html seja modificado ele envia um email para o usuário.
+Um monitorador de sites que verifica uma URL passada e compara com o html esperado, caso não consiga acessar ou o html seja modificado ele envia um email para o usuário.
 
 ---
 
@@ -23,7 +23,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone git@github.com:serjofrancisco/Monitoria-Notifica.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd ProjectTrybe-TFC
+$ cd Monitoria-Notifica
 
 # inicie o .venv
 $ python3 -m venv .venv && source .venv/bin/activate
