@@ -51,8 +51,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[python-dotenv](https://github.com/theskumar/python-dotenv)**
 - **[dotENV](https://github.com/motdotla/dotenv)**
 
-> Veja o arquivo  [requirements.txt]()
+> Veja o arquivo  [requirements.txt](https://github.com/serjofrancisco/Monitoria-Notifica/blob/main/requirements.txt)
 
 ---
-
-## 📝 Licença
